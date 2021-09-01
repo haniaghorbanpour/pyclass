@@ -1,18 +1,8 @@
-classA = {"Ali" , "Hania" , "Farzaneh" , "Tina" , "Saeed"}
-classB = {"Hania" , "Farzaneh" , "Tina" , "Mahsa"}
+classA = ['Hanieh', 'Tina', 'Behrad', 'Bita', 'Neda','Elham']
+classB =['Hanieh' , 'Tina', 'Behrad' ,'Amir']
 
-#tamam daneshjo ha chap shan
-classA.update(classB)
-print(classA)
-
-#daneshjo haye moshtarak chap shan
-classC=classA.intersection(classB)
-print(f"{classC} ina moshtarakan")
-
-#chap kardan 1 kelas faghat A
-classD1=(classA-classC)
-
-#chap kardan 1 kelas faghat B
-classD2=(classB-classC)
-
-print(f"{classD1.union(classD2)} ina faghat 1 class daran")
+setA=set(classA)
+setB=set(classB)
+print(f"{setA.union(setB)} hadeaghal 1 class daran")
+print(f"{setA.intersection(setB)} har 2 class ro daran")
+print(f"{setA.union(setB)-(setA.intersection(setB))} faghat 1 class daran")
